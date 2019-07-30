@@ -13,7 +13,7 @@ class NavBar extends Component{
         ))
     
         return (
-            <nav className="navbar narbar-dark bg-dark narbar-expand-lg">
+            <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
                 <Link exact to='/dogs' className="navbar-brand">
                     Dog App 
                 </Link>
@@ -30,11 +30,12 @@ class NavBar extends Component{
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
-                        <li className='nav-item'>
+                        <li className='nav-link'>
                             <NavLink exact to='/dogs' className='nav-link'>
                                 Home
                             </NavLink>
                         </li>
+                        
                         {dogLinks}
 
                     </ul>
